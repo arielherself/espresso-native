@@ -215,7 +215,7 @@ def web_process(**kwargs):
             </div>
         </div>
         <div class="mdui-dialog-actions">
-          <button class="mdui-btn mdui-text-color-white mdui-ripple" onclick="window.location.href=`raw.html`">Visit an unmodified version</button>
+          <button class="mdui-btn mdui-text-color-white mdui-ripple" mdui-dialog-close onclick="window.location.href=`raw.html`">Visit an unmodified version</button>
           <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>OK</button>
         </div>
       </div>
