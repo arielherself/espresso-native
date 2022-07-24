@@ -46,10 +46,10 @@ def web_process(**kwargs):
                 font-family: 'custom';
                 src: url('./milo-primary-subset-rg.woff2');
             } 
-            div.customisedFont{
+            .customisedFont{
                 font-family: 'custom';
-                font-size:115%;
-                line-height: 150%;
+                font-size:120%;
+                line-height: 140%;
             }
         </style>
         <link rel="stylesheet" href="mdui-v1.0.2/css/mdui.min.css"/>
@@ -84,11 +84,11 @@ def web_process(**kwargs):
     <div class="mdui-row">
         <div class="mdui-col-xs-10">
             <div class="mdui-textfield mdui-textfield-expandable">
-                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=true;">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=false;">
                   <i class="mdui-icon material-icons">search</i>
                 </button>
                 <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD" id="targ" />
-                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=false;">
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=true;">
                   <i class="mdui-icon material-icons" mdui-tooltip="{content: 'Cancel'}">close</i>
                 </button>
               </div>    
@@ -113,13 +113,13 @@ def web_process(**kwargs):
             processed_detail = details[i][j]
             processed_detail = processed_detail.replace('<a href="//', '<a href="https://').replace('<a href="/', '<a href="https://economist.com/')
             processed_detail = processed_detail.replace('<a ', '<a class="mdui-text-color-red-a700" ')
-            htmllines.append(f'<p>{processed_detail}</p>')
+            htmllines.append(f'<p class="customisedFont">{processed_detail}</p>')
     suffix = '''
     <hr>
 
 <p><i>Owing to the difference between time zones of servers in which our auto-update script is running, content above probably doesn't match the one in your region.</i></p>
 
-<br></div></div>'''
+<br></div>'''
     proxy_suffix = '''
     <div class="mdui-dialog" id="dialog">
         <div class="mdui-dialog-content">
