@@ -58,7 +58,7 @@ def web_process(**kwargs):
     <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto">
         <button mdui-dialog="{target: '#dialog'}" id="hidden_dialog" hidden></button>
         <div class="mdui-appbar mdui-appbar-fixed">
-            <div class="mdui-toolbar mdui-color-theme">
+            <div class="mdui-toolbar mdui-color-red-a700">
               <a href="https://github.com/arielherself/espresso-native" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Project repository', position: 'right'}">
                 <i class="mdui-icon material-icons">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
@@ -87,7 +87,7 @@ def web_process(**kwargs):
             continue
         processed_detail = each
         processed_detail = processed_detail.replace('<a href="//', '<a href="https://').replace('<a href="/', '<a href="https://economist.com/')
-        processed_detail = processed_detail.replace('<a ', '<a class="mdui-text-color-theme" ')
+        processed_detail = processed_detail.replace('<a ', '<a class="mdui-text-color-red-a700" ')
         htmllines.append(f'<p>{processed_detail}</p>')
     htmllines.append('<hr>')
     for i in range(len(titles)):
@@ -95,7 +95,7 @@ def web_process(**kwargs):
         for j in range(len(details[i])):
             processed_detail = details[i][j]
             processed_detail = processed_detail.replace('<a href="//', '<a href="https://').replace('<a href="/', '<a href="https://economist.com/')
-            processed_detail = processed_detail.replace('<a ', '<a class="mdui-text-color-theme" ')
+            processed_detail = processed_detail.replace('<a ', '<a class="mdui-text-color-red-a700" ')
             htmllines.append(f'<p>{processed_detail}</p>')
     suffix = '''
     <hr>
@@ -119,7 +119,7 @@ def web_process(**kwargs):
             </div>
         </div>
         <div class="mdui-dialog-actions">
-          <button class="mdui-btn mdui-text-color-white-black mdui-text-color-black-white mdui-ripple" mdui-dialog-close onclick="window.open(`raw.html`);">Visit an unmodified version</button>
+          <button class="mdui-btn mdui-text-color-theme-text mdui-ripple" mdui-dialog-close onclick="window.open(`raw.html`);">Visit an unmodified version</button>
           <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>OK</button>
         </div>
       </div>
