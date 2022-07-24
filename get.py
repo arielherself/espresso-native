@@ -83,8 +83,7 @@ def web_process(**kwargs):
 <div>
     <h1 align="center" class="mdui-typo-display-3"><strong>The world in brief</strong></h1>
     <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
-    <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i><hr></div>
-</div>
+    <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i></div>
     <div class="mdui-row">
         <div class="mdui-col-xs-10">
             <div class="mdui-textfield mdui-textfield-expandable">
@@ -100,7 +99,9 @@ def web_process(**kwargs):
         <div class="mdui-col-xs-2">
             <button class="mdui-btn mdui-color-red-a700" id="submit_button" hidden onclick="window.open(`archive/`+document.getElementById(`targ`).value)+`.html`;">Go</button>
         </div>
-    </div>
+    </div><hr>
+</div>
+    
     '''
     htmllines.append(prefix)
     for each in pre:
