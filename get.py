@@ -85,10 +85,10 @@ def web_process(**kwargs):
         </div>
         <div class="mdui-container customisedFont mdui-typo" style="max-width: 700px;">
 <br>
-<div style="line-height: 70%;">
+<div>
     <h1 align="center" class="mdui-typo-display-3"><strong>The world in brief</strong></h1>
-    <p align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</p>
-    <p align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i><hr></p>
+    <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
+    <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i><hr></div>
 </div>
     '''
     htmllines.append(prefix)
@@ -211,9 +211,7 @@ def web_process(**kwargs):
                           <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" onclick="document.getElementById(`pop-up`).hidden=true">OK</button>
                         </div>
                         <div class="mdui-col-xs-6">
-                    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">
-                        <a href="raw.html">Visit the unmodified version</a>
-                    </button>
+                            <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple mdui-text-color-theme" onclick="window.location.href=`raw.html`">Visit the unmodified version</button>
                         </div>
                       </div>
                 </td>
