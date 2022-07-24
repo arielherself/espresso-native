@@ -47,11 +47,11 @@
     <div class="mdui-row">
         <div class="mdui-col-xs-10">
             <div class="mdui-textfield mdui-textfield-expandable">
-                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=true;">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=false;">
                   <i class="mdui-icon material-icons">search</i>
                 </button>
                 <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD" id="targ" />
-                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=false;">
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=true;">
                   <i class="mdui-icon material-icons" mdui-tooltip="{content: 'Cancel'}">close</i>
                 </button>
               </div>    
