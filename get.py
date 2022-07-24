@@ -91,7 +91,7 @@ def web_process(**kwargs):
                 <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=false;">
                   <i class="mdui-icon material-icons">search</i>
                 </button>
-                <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD" id="targ" />
+                <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD(Back up to 2022-07-24)" id="targ" />
                 <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=true;">
                   <i class="mdui-icon material-icons" mdui-tooltip="{content: 'Cancel'}">close</i>
                 </button>
