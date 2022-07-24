@@ -48,7 +48,7 @@ def web_process(**kwargs):
             } 
             div.customisedFont{
                 font-family: 'custom';
-                font-size:125%;
+                font-size:115%;
                 line-height: 150%;
             }
         </style>
@@ -119,7 +119,7 @@ def web_process(**kwargs):
 
 <p><i>Owing to the difference between time zones of servers in which our auto-update script is running, content above probably doesn't match the one in your region.</i></p>
 
-<br></div>'''
+<br></div></div>'''
     proxy_suffix = '''
     <div class="mdui-dialog" id="dialog">
         <div class="mdui-dialog-content">
