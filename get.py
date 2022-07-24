@@ -66,7 +66,7 @@ def web_process(**kwargs):
         <link rel="shortcut icon" href="https://www.economist.com/engassets/ico/favicon.f1ea908894.ico" type="image/x-icon">
         <title>Espresso</title>
     </head>
-    <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto" onload="document.getElementById(`hidden_dialog`).click()">
+    <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto" onload="document.getElementById(`hidden_dialog`).click();">
         <button mdui-dialog="{target: '#dialog'}" id="hidden_dialog" hidden></button>
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-theme">
@@ -216,7 +216,7 @@ def web_process(**kwargs):
         </div>
         <div class="mdui-dialog-actions">
           <button class="mdui-btn mdui-text-color-white mdui-ripple" onclick="window.location.href=`raw.html`">Visit an unmodified version</button>
-          <button class="mdui-btn mdui-ripple "mdui-dialog-close>OK</button>
+          <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>OK</button>
         </div>
       </div>
 '''
