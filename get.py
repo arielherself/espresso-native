@@ -1,5 +1,4 @@
 import requests
-import datetime
 
 MIRROR = 'te.arielherself.xyz'
 
