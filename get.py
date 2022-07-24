@@ -105,7 +105,7 @@ def web_process(**kwargs):
         processed_detail = each
         processed_detail = processed_detail.replace('<a href="//', '<a href="https://').replace('<a href="/', '<a href="https://economist.com/')
         processed_detail = processed_detail.replace('<a ', '<a class="mdui-text-color-red-a700" ')
-        htmllines.append(f'<p>{processed_detail}</p>')
+        htmllines.append(f'<p class="customisedFont">{processed_detail}</p>')
     htmllines.append('<hr>')
     for i in range(len(titles)):
         htmllines.append(f'<h3>{titles[i]}</h3>')
