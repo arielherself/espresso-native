@@ -48,7 +48,7 @@ def web_process(**kwargs):
             } 
             div.customisedFont{
                 font-family: 'custom';
-                font-size:120%;
+                font-size:115%;
                 line-height: 150%;
             }
         </style>
@@ -74,28 +74,28 @@ def web_process(**kwargs):
               </a>
             </div>
         </div>
-        <div class="mdui-container customisedFont mdui-typo" style="max-width: 700px;">
+        <div class="mdui-container customisedFont mdui-typo" style="max-width: 768px;">
 <br><br>
 <div>
     <h1 align="center" class="mdui-typo-display-3"><strong>The world in brief</strong></h1>
     <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
     <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i><hr></div>
 </div>
-<div class="mdui-container customisedFont mdui-typo" style="max-width: 700px;">
+<div class="mdui-container customisedFont mdui-typo" style="max-width: 768px;">
     <div class="mdui-row">
         <div class="mdui-col-xs-10">
             <div class="mdui-textfield mdui-textfield-expandable">
-                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=true;">
                   <i class="mdui-icon material-icons">search</i>
                 </button>
                 <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD" id="targ" />
-                <button class="mdui-textfield-close mdui-btn mdui-btn-icon">
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=false;">
                   <i class="mdui-icon material-icons" mdui-tooltip="{content: 'Cancel'}">close</i>
                 </button>
               </div>    
         </div>
         <div class="mdui-col-xs-2">
-            <button class="mdui-btn mdui-color-red-a700" onclick="window.open(`archive/`+document.getElementById(`targ`).value)+`.html`;">Go</button>
+            <button class="mdui-btn mdui-color-red-a700" id="submit_button" hidden onclick="window.open(`archive/`+document.getElementById(`targ`).value)+`.html`;">Go</button>
         </div>
     </div>
     '''
