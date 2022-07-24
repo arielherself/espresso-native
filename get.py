@@ -62,7 +62,7 @@ def web_process(**kwargs):
                 line-height: 150%;
             }
         </style>
-        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+        <link rel="stylesheet" href="mdui-v1.0.2/css/mdui.min.css"/>
         <link rel="shortcut icon" href="https://www.economist.com/engassets/ico/favicon.f1ea908894.ico" type="image/x-icon">
         <title>Espresso</title>
     </head>
@@ -221,6 +221,7 @@ def web_process(**kwargs):
 </div><br>'''
     general_suffix = '''
 </div>
+<script src="mdui-v1.0.2/js/mdui.min.js"></script>
 </body>
 </html>'''
     htmllines.append(suffix)
