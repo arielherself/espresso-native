@@ -1,4 +1,5 @@
 import requests
+import datetime
 
 MIRROR = 'te.arielherself.xyz'
 
@@ -80,6 +81,23 @@ def web_process(**kwargs):
     <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
     <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i><hr></div>
 </div>
+<div class="mdui-container customisedFont mdui-typo" style="max-width: 700px;">
+    <div class="mdui-row">
+        <div class="mdui-col-xs-10">
+            <div class="mdui-textfield mdui-textfield-expandable">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}">
+                  <i class="mdui-icon material-icons">search</i>
+                </button>
+                <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD" id="targ" />
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon">
+                  <i class="mdui-icon material-icons" mdui-tooltip="{content: 'Cancel'}">close</i>
+                </button>
+              </div>    
+        </div>
+        <div class="mdui-col-xs-2">
+            <button class="mdui-btn mdui-color-red-a700" onclick="window.open(`archive/`+document.getElementById(`targ`).value)+`.html`;">Go</button>
+        </div>
+    </div>
     '''
     htmllines.append(prefix)
     for each in pre:
@@ -150,3 +168,5 @@ if __name__ == '__main__':
         print(*page, file=fil)
     with open('raw.html', 'w', encoding='utf8') as fil:
         print(*page_raw, file=fil)
+    with open(f'archive/{datetime.datetime.now().isoformat()[:10]}.html', 'w', encoding='utf8') as fil:
+        print(*page, file=fil)
