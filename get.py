@@ -48,7 +48,7 @@ def web_process(**kwargs):
             } 
             div.customisedFont{
                 font-family: 'custom';
-                font-size:135%;
+                font-size:120%;
                 line-height: 150%;
             }
         </style>
@@ -75,7 +75,7 @@ def web_process(**kwargs):
             </div>
         </div>
         <div class="mdui-container customisedFont mdui-typo" style="max-width: 700px;">
-<br>
+<br><br>
 <div>
     <h1 align="center" class="mdui-typo-display-3"><strong>The world in brief</strong></h1>
     <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
