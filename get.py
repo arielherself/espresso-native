@@ -66,7 +66,8 @@ def web_process(**kwargs):
         <link rel="shortcut icon" href="https://www.economist.com/engassets/ico/favicon.f1ea908894.ico" type="image/x-icon">
         <title>Espresso</title>
     </head>
-    <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto">
+    <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto" onload="document.getElementById(`hidden_dialog`).click()">
+        <button mdui-dialog="{target: '#dialog'}" id="hidden_dialog" hidden></button>
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-theme">
               <a href="https://github.com/arielherself/espresso-native" class="mdui-btn mdui-btn-icon">
@@ -199,26 +200,26 @@ def web_process(**kwargs):
 
 <br>'''
     proxy_suffix = '''
-    <br> 
-<div class="mdui-table-fluid" id="pop-up">
-    <table class="mdui-table">
-        <tbody>
-            <tr>
-                <td>
-                    <div align="center"><img src="unlock.png" /><h1>Privacy Information</h1></div></br><p>We use a certain script to prevent the paywall from loading, thus links contained lead you to proxied corresponding webpages. Visiting these webpages means you have already acknowledged potential risks of having your behaviour recorded by Cloudflare.</p><br><br></div>
-                    <div class="mdui-row-xs-2">
-                        <div class="mdui-col-xs-6">
-                          <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" onclick="document.getElementById(`pop-up`).hidden=true">OK</button>
-                        </div>
-                        <div class="mdui-col-xs-6">
-                            <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple mdui-text-color-theme" onclick="window.location.href=`raw.html`">Visit the unmodified version</button>
-                        </div>
-                      </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div><br>'''
+    <div class="mdui-dialog" id="dialog">
+        <div class="mdui-dialog-content">
+            <div class="mdui-table-fluid" id="pop-up">
+                <table class="mdui-table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div align="center"><img src="unlock.png" /><h1>Privacy Information</h1></div><br><p>We use a certain script to prevent the paywall from loading, thus links contained lead you to proxied corresponding webpages. Visiting these webpages means you have already acknowledged potential risks of having your behaviour recorded by Cloudflare.</p><br><br></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-text-color-white mdui-ripple" onclick="window.location.href=`raw.html`">Visit an unmodified version</button>
+          <button class="mdui-btn mdui-ripple "mdui-dialog-close>OK</button>
+        </div>
+      </div>
+'''
     general_suffix = '''
 </div>
 <script src="mdui-v1.0.2/js/mdui.min.js"></script>
