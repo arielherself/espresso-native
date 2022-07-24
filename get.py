@@ -48,7 +48,7 @@ def web_process(**kwargs):
             } 
             div.customisedFont{
                 font-family: 'custom';
-                font-size:115%;
+                font-size:125%;
                 line-height: 150%;
             }
         </style>
@@ -81,7 +81,6 @@ def web_process(**kwargs):
     <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
     <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://www.economist.com/the-world-in-brief">https://www.economist.com/the-world-in-brief</a></i><hr></div>
 </div>
-<div class="mdui-container customisedFont mdui-typo" style="max-width: 768px;">
     <div class="mdui-row">
         <div class="mdui-col-xs-10">
             <div class="mdui-textfield mdui-textfield-expandable">
@@ -140,7 +139,6 @@ def web_process(**kwargs):
           <button class="mdui-btn mdui-text-color-theme-text mdui-ripple" mdui-dialog-close onclick="window.open(`raw.html`);">Visit an unmodified version</button>
           <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>OK</button>
         </div>
-      </div>
       <script type="text/javascript">
     function click_button () {
         state = {title:'',url:window.location.href};
