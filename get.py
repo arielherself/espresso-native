@@ -2,6 +2,10 @@ import requests
 import datetime
 
 MIRROR = 'te.arielherself.xyz'
+# Absolute paths:
+#   https://arielherself.github.io/espresso-native/unlock.png
+#   https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css
+#   https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js
 
 def get(proxy=False, http_proxy='', https_proxy=''):
     try:
@@ -128,7 +132,7 @@ def web_process(**kwargs):
                     <tbody>
                         <tr>
                             <td>
-                                <div align="center"><img src="unlock.png" /><h1>Privacy Information</h1></div><br><p>We use a certain script to prevent the paywall from loading, thus links contained lead you to proxied corresponding webpages. Visiting these webpages means you have already acknowledged potential risks of having your behaviour recorded by Cloudflare.</p><br><br></div>
+                                <div align="center"><img src="https://arielherself.github.io/espresso-native/unlock.png" /><h1>Privacy Information</h1></div><br><p>We use a certain script to prevent the paywall from loading, thus links contained lead you to proxied corresponding webpages. Visiting these webpages means you have already acknowledged potential risks of having your behaviour recorded by Cloudflare.</p><br><br></div>
                             </td>
                         </tr>
                     </tbody>
