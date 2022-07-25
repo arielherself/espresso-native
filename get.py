@@ -57,7 +57,7 @@ def web_process(**kwargs):
             }
         </style>
         <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
-        <link rel="shortcut icon" href="https://www.economist.com/engassets/ico/favicon.f1ea908894.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
         <title>Espresso</title>
     </head>
     <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto">
