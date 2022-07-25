@@ -20,8 +20,8 @@ htmllines.append('''
             }
         </style>
         <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
-        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
-        <title>Espresso</title>
+        <link rel="shortcut icon" href="https://arielherself.github.io/espresso-native/museum.png" type="image/x-icon">
+        <title>Espresso Archive</title>
     </head>
     <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto">
         <button mdui-dialog="{target: '#dialog'}" id="hidden_dialog" hidden></button>
