@@ -168,8 +168,8 @@ def web_process(**kwargs):
 if __name__ == '__main__':
     page_raw, page = web_process(proxy=False)
     with open('index.html', 'w', encoding='utf8') as fil:
-        print(*page, file=fil)
+        print(*page, sep='\n', file=fil)
     with open('raw.html', 'w', encoding='utf8') as fil:
-        print(*page_raw, file=fil)
+        print(*page_raw, sep='\n', file=fil)
     with open(f'archive/{datetime.datetime.now().isoformat()[:10]}.html', 'w', encoding='utf8') as fil:
-        print(*page, file=fil)
+        print(*page, sep='\n', file=fil)
