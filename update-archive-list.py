@@ -24,6 +24,14 @@ htmllines.append('''
         <title>Espresso Archive</title>
     </head>
     <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <script>
+            document.addEventListener("keydown",listenEnter);
+            function listenEnter() {
+                if ((event.which || event.keyCode) == 13) {
+                    document.getElementById("submit_button").click();
+                }
+            }
+        </script>
         <button mdui-dialog="{target: '#dialog'}" id="hidden_dialog" hidden></button>
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-red-a700">
