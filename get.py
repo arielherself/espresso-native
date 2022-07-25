@@ -97,7 +97,7 @@ def web_process(**kwargs):
               </div>    
         </div>
         <div class="mdui-col-xs-2">
-            <button class="mdui-btn mdui-color-red-a700" id="submit_button" hidden onclick="window.open(`archive/`+document.getElementById(`targ`).value)+`.html`;">Go</button>
+            <button class="mdui-btn mdui-color-red-a700" id="submit_button" hidden onclick="window.open(`archive/`+document.getElementById(`targ`).value+`.html`);">Go</button>
         </div>
     </div><hr>
 </div>

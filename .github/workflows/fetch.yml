@@ -31,6 +31,7 @@ jobs:
     - name: Fetch Content
       run: |
         python get.py
+        python update-archive-list.py
     - name: Commit
       run: |
         git config --global user.email ariel@arielherself.xyz
