@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>Espresso</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <script>
+            document.addEventListener("keydown",listenEnter);
+            function listenEnter() {
+                if ((event.which || event.keyCode) == 13) {
+                    document.getElementById("submit_button").click();
+                }
+            }
+        </script>
+        <button mdui-dialog="{target: '#dialog'}" id="hidden_dialog" hidden></button>
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <a href="https://github.com/arielherself/espresso-native" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Project repository', position: 'right'}">
+                <i class="mdui-icon material-icons">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
+                    </svg>
+                </i>
+              </a>
+              <a href="https://te.arielherself.xyz" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo" style="max-width: 768px;">
+<br><br>
+<div>
+    <h1 align="center" class="mdui-typo-display-3"><strong>The world in brief</strong></h1>
+    <div align="center" class="mdui-typo-headline">Catch up quickly on the global stories that matter</div>
+    <div align="center" class="mdui-typo-subheading"><i>Origin: <a href="https://te.arielherself.xyz/the-world-in-brief">https://te.arielherself.xyz/the-world-in-brief</a></i></div>
+    <div class="mdui-row">
+        <div class="mdui-col-xs-10">
+            <div class="mdui-textfield mdui-textfield-expandable">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Go to article...'}" onclick="document.getElementById(`submit_button`).hidden=false;">
+                  <i class="mdui-icon material-icons">search</i>
+                </button>
+                <input class="mdui-textfield-input" type="text" placeholder="YYYY-MM-DD(Back up to 2022-07-24)" id="targ" />
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" onclick="document.getElementById(`submit_button`).hidden=true;">
+                  <i class="mdui-icon material-icons" mdui-tooltip="{content: 'Cancel'}">close</i>
+                </button>
+              </div>    
+        </div>
+        <div class="mdui-col-xs-2">
+            <button class="mdui-btn mdui-color-red-a700" id="submit_button" hidden onclick="window.open(`archive/`+document.getElementById(`targ`).value);">Go</button>
+        </div>
+    </div><hr>
+</div>
+    
+    
+<p class="customisedFont"><strong>Luiz Inácio Lula da Silva </strong>was sworn in as <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/the-americas/2022/12/31/brazils-new-president-faces-a-fiscal-crunch-and-a-fickle-congress">Brazil’s president</a> in Brasília, the country’s capital. The left-leaning politician was previously president from 2003 to 2010. He defeated Jair Bolsonaro, the far-right incumbent, in October in the closest election in Brazil’s recent history. Tens of thousands of Lula’s supporters thronged the streets of Brasília. Breaking with past practice, Mr Bolsonaro did not attend the ceremony.</p>
+<p class="customisedFont"><strong>Russia</strong> continued to bombard <strong>Kyiv</strong>, <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/leaders/2022/12/20/our-country-of-the-year-for-2022-can-only-be-ukraine">Ukraine’s</a> capital, and other major cities in the early hours of New Year’s Day. This followed a wave of strikes on Saturday that killed at least one person. In a New Year speech Vladimir Putin, Russia’s president, accused the West of provoking Russia’s invasion of Ukraine and of trying to “weaken and split” his country. Ukraine’s president, Volodymyr Zelensky, said that Mr Putin was “hiding”, and “burning” the Russian people’s own future. </p>
+<p class="customisedFont">The <strong>New Year </strong>has been celebrated around the world—in many places, without restrictions for the first time since the coronavirus pandemic began. Crowds gathered in China despite the sharp rise in coronavirus infections. But the turn of the year passed without the usual fireworks in Red Square, in <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/the-world-ahead/2022/11/18/russia-risks-becoming-ungovernable-and-descending-into-chaos">Moscow</a>; and the streets of Kyiv, a city under curfew, were empty<em>. </em>Malaysia’s government cancelled an event in Kuala Lumpur after a landslide in the country killed dozens and displaced thousands.</p>
+<p class="customisedFont">At midnight on Sunday <strong>Croatia</strong> adopted the <strong>euro</strong> as its currency and joined the Schengen passport-free travel area. The country became part of the EU in 2013 but was only given permission to join the single currency this summer, after the European Central Bank ruled that its <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/finance-and-economics/2022/12/21/five-financial-trends-that-2022-killed">economy</a> was sufficiently aligned with others in the euro zone.</p>
+<p class="customisedFont">Listen to an abridged version of the subscriber-only briefing.</p>
+<p class="customisedFont"><strong>Kim Jong Un</strong> ordered an “exponential” expansion of <strong>North Korea’s</strong> nuclear arsenal. He also decreed that his country should launch its first spy satellite and develop new intercontinental ballistic missiles. North Korea rounded out 2022—a year in which it conducted a record number of <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/asia/2022/10/18/north-korea-is-preparing-for-another-nuclear-test-or-many">weapons tests</a>—by launching three ballistic <strong>missiles</strong> towards the Sea of Japan, according to South Korea.</p>
+<p class="customisedFont">Xi Jinping, <strong>China’s </strong>president, said his country “unswervingly stands on the right side of history”. In a televised New Year’s Eve address Mr Xi also acknowledged that his country had “entered a new phase” in its response to the <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/china/2022/12/28/covid-19-is-tearing-through-china">covid-19 pandemic</a> and faced “tough challenges”. Meanwhile the Philippines became the latest country to restrict or increase checks on travellers from China.</p>
+<p class="customisedFont">Hundreds of thousands of <strong>Palestinians </strong>attended a rally in Gaza to mark the 58th anniversary of the founding of the Fatah party. Although Fatah runs the Palestinian Authority, based in the West Bank, Hamas, its militant rival, controls the Gaza Strip and allowed the demonstration to go ahead. In <strong>Israel</strong>, which with Egypt blockades the Gaza Strip, a new, right-wing coalition government <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/middle-east-and-africa/2022/12/29/israels-new-government-is-the-most-right-wing-ever">took office</a> this week.</p>
+<p class="customisedFont"><strong>Word of the week:</strong> <em>masyarakat adat</em>, an Indonesian word for ethnic groups, such as the Baduy, who shun modernity. <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/christmas-specials/2022/12/20/in-a-corner-of-java-live-the-amish-of-indonesia">Read the full story</a>.</p>
+<hr>
+<h3>2023 in preview: A feast of great art shows</h3>
+<p class="customisedFont"><em>This week we have been looking ahead to the big stories of 2023. This weekend, culture. Regular Espresso service will resume on Tuesday</em></p>
+<p class="customisedFont">The blockbuster <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/the-world-ahead/2022/11/18/after-the-pandemic-a-feast-of-great-art-shows-is-coming">art shows of 2023</a> will be in Amsterdam and London. In February the <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/prospero/2013/04/13/the-opening-of-the-rijksmuseum">Rijksmuseum</a> will put on the largest-ever show of Johannes Vermeer’s work, bringing together 27 of his 35 surviving paintings. The show will also reveal the master’s method through scientific studies of <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/books-and-arts/2009/09/17/a-dutch-treat">“The Milkmaid”</a>, painted in 1660. In March, meanwhile, “After Impressionism” opens at the National Gallery, bringing together Cézanne, Van Gogh, Klimt, Matisse, Munch, Picasso and Rodin to explore how styles such as Cubism and Expressionism developed in cities across Europe. </p>
+<p class="customisedFont">New institutions are opening, too. Seoul gets the Robot &amp; AI Museum: as well as being exhibited, robots have been involved in the building’s design, manufacturing and construction. In January the International African-American Museum will open in Charleston, South Carolina, on the site of a wharf where 100,000 enslaved Africans disembarked from ships. A spiritual sibling, the Pan African Heritage Museum, in Ghana, will also open in 2023. Its design resembles a horn, an instrument often used to herald the arrival of something, or someone, special.</p>
+<h3>2023 in preview: An enticing variety of new films</h3>
+<p class="customisedFont">Film buffs will have plenty to watch in 2023. There are adaptations of Alice Walker’s “The Color Purple”, Kristin Hannah’s “The Nightingale” and Roald Dahl’s “The Wonderful Story of Henry Sugar”. Martin Scorsese will direct Leonardo DiCaprio and Robert De Niro in “Killers of the Flower Moon”, about the murders of Osage tribespeople in Oklahoma in the 1920s. For action fans a doddery Harrison Ford, now in his 80s, will return for a fifth “Indiana Jones” film. </p>
+<p class="customisedFont">There will be a surfeit of biographical drama, too. Dustin Lance Black has written the script for “Rustin”, a film about Bayard Rustin, a gay civil-rights activist who organised the March on Washington in 1963. Bradley Cooper will star as Leonard Bernstein, a revered composer and conductor, in “Maestro”. And Cillian Murphy will take on the role of Robert Oppenheimer, the father of the atomic bomb. Meanwhile, Margot Robbie plays one of the world’s most famous fictional women, in “Barbie”.</p>
+<h3>2023 in preview: The cricket World Cup</h3>
+<p class="customisedFont">In October, ten teams will meet in India for cricket’s one-day game World Cup. It will be one of the glitziest events the sport has ever seen. </p>
+<p class="customisedFont">The millions of Indians who watch televised cricket make for a hugely valuable audience. In 2022 online streaming rights alone to the domestic <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/asia/2022/03/26/how-the-ipl-reflects-indias-strengths-and-weaknesses">Indian Premier League</a> cost Reliance, an Indian oil-to-retail behemoth, <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/business/2022/06/16/disney-loses-its-indian-premier-league-streaming-rights">$2.6bn</a>. Players are paid handsomely, too. So for foreign cricketers, including those from England, which won the last tournament in 2019, the World Cup will be both an opportunity for national glory and an audition for a life-changing contract.<br/><br/> Indian money is changing how the game is played as well as watched. Many Indian fans prefer the two-hour “T20” format used in the IPL to the one-day cricket played at the World Cup, or to traditional five-day Test matches. The longer formats are therefore retreating before the juggernaut of Indian-organised T20 tournaments. Two T20 leagues will launch (with Indian-owned teams) in 2023. Many fans of the older, more stately versions of the game dread such developments.</p>
+<h3>2023 in preview: Words of the year</h3>
+<p class="customisedFont">What coinages might you expect to hear in 2023? For more, read the <a class="mdui-text-color-red-a700" href="https://te.arielherself.xyz/the-world-ahead/2022/11/14/23-items-of-vital-vocabulary-youll-need-to-know-in-2023">full story</a></p>
+<p class="customisedFont"><strong>eSIM: </strong>technology that replaces the physical SIM in your phone with digital codes that can be zapped from an old handset to a new one.</p>
+<p class="customisedFont"><strong>Mixed reality: </strong>technology that allows real and virtual items to interact, such as a game of table tennis with real paddles and a computer generated ball. </p>
+<p class="customisedFont"><strong>Aridification: </strong>the long-term drying of a region; a term applied when “drought,” or even “megadrought,” are no longer sufficient.</p>
+<p class="customisedFont"><strong>Synfuels and e-fuels:</strong> replacements for conventional hydrocarbons that are produced artificially rather than from oil. </p>
+<p class="customisedFont"><strong>Productivity paranoia:</strong> an affliction of home workers afraid of being seen as shirkers, and bosses afraid that home-workers are indeed shirking. </p>
+<p class="customisedFont"><strong>TWaT city: </strong>one where many commuters travel to the office only on Tuesdays, Wednesdays and Thursdays. </p>
+<p class="customisedFont"><strong>Battery belt: </strong>a green-friendly revitalised form of America’s “Rust Belt” through investment in industries such as electric-car manufacturing and “gigafactories” that make batteries for electric cars. <br/><br/><strong>Vertiport: </strong>where multirotor drones that are large enough to carry people, also known as flying cars, take off and land.</p>
+<h3>The winners of this week’s quiz</h3>
+<p class="customisedFont">Thank you to everyone who took part in this week’s quiz. The winners, chosen at random, were:</p>
+<p class="customisedFont"><strong>Irene Swil and Symmie Swil</strong>, Sydney, Australia<br/><strong>Jennifer Stapleton</strong>, Cheltenham, England<br/><strong>Barry McDonald</strong>, Burlington, Canada</p>
+<p class="customisedFont">They gave the correct answers of Arizona, Larry Fink, Simple Minds, crossing the Rubicon, and “Grit”. The theme is Coen Brothers films: “Raising Arizona”, “Barton Fink”, “Blood Simple”, “Miller’s Crossing” and “True Grit”.</p>
+
+    <hr>
+
+<p><i>Owing to the difference between time zones of servers in which our auto-update script is running, content above probably doesn't match the one in your region.</i></p>
+
+<br></div>
+
+    <div class="mdui-dialog" id="dialog">
+        <div class="mdui-dialog-content">
+            <div class="mdui-table-fluid" id="pop-up">
+                <table class="mdui-table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div align="center"><img src="https://arielherself.github.io/espresso-native/unlock.png" /><h1>Privacy Information</h1></div><br><p>We use a certain script to prevent the paywall from loading, thus links contained lead you to proxied corresponding webpages. Visiting these webpages means you have already acknowledged potential risks of having your behaviour recorded by Cloudflare.</p><br><br></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-text-color-theme-text mdui-ripple" mdui-dialog-close onclick="window.open(`raw.html`);">Visit an unmodified version</button>
+          <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>OK</button>
+        </div>
+      <script type="text/javascript">
+    function click_button () {
+        state = {title:'',url:window.location.href};
+        history.pushState(state, '');
+        document.getElementById(`hidden_dialog`).click();
+    }
+    window.onload = click_button;
+    </script>
+
+
+
+<script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</body>
+</html>
